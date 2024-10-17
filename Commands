@@ -1,0 +1,38 @@
+Arguments will have R, #, x, and i in parentheses behind them. These are the types of data they can be. R is a register, # is any number/string, x is a memory register, and i is an input(1-84)
+
+MOV destination, source
+Sets register destination(R) to source(R#xi)
+ADD destination, source1, source2
+Sets register destination(R) to source1(R#xi) - source2(R#xi)
+SUB destination, source1, source2
+Sets register destination(R) to source1(R#xi)  - source2(R#xi)
+CMP source1, source2
+Subtracts source1(R#xi) from source2(R#xi) and sets flags
+LDR destination, address
+Loads memory address(x) into register destination(R)
+STR source, address
+Stores register source(R) at memory address address(x)
+DRWCIR x, y, radius, hex, texture
+Draws a circle at (x(R#xi), y(R#xi)) with a radius of radius(R#xi), colour of hex(R#xi), and texture texture(R#xi) Texture is a costume number in the GPU
+DRWSQR x1, y1, x2, y2, hex
+Draws a square from (x1(R#xi), y1(R#xi)) to (x2(R#xi), y2(R#xi)) with a colour of hex(R#xi)
+DRWTXT text, x, y, align, size, brightness, colour
+Writes text(R#xi) at (x(R#xi), y(R#xi)) with an alignment of align(R#xi), size of size(R#xi), brightness of brightness(R#xi), and colour of hex(R#xi)
+DRWLNE x1, y1, x2, y2, radius, hex
+Draws a line from (x1(R#xi), y1(R#xi)) to (x2(R#xi), y2(R#xi)) with a thickness of radius(R#xi) and colour of hex(R#xi)
+B line
+Moves the program index to line(R#xi)
+BEQ flag, line
+Moves the program index to line(R#xi) if flag flag is true
+BNE flag line
+Moves the program index to line(R#xi) if flag flag is false
+MUL destination, source1, source2
+Sets register destination(R) to source1(R#xi) * source2(R#xi)
+DIV destination, source1, source2
+Sets register destination(R) to source1(R#xi) / source2(R#xi)
+CMB destination, source1, source2
+Sets register destination(R) to source1(R#xi) joined to source2(R#xi)
+SIN destination, source
+Sets register destination(R) to sine of source(R#xi)
+COS destination, source
+Sets register destination(R) to cosine of source(R#xi)
