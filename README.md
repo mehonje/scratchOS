@@ -1,2 +1,2 @@
 # scratchOS
-Scratch operating system running my scratch programming language
+Scratch operating system running ARM architecture
